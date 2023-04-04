@@ -8,6 +8,7 @@ export default class ContactList extends LightningElement {
     @wire(getContactList)
     contactList;
 
-    
+ 
+
 
 }

@@ -8,8 +8,15 @@ export default class ContactsDisplay extends LightningElement {
 
     objectApiName=CONTACT;
     fields = [CONTACT_FIRSTNAME, CONTACT_LASTNAME, CONTACT_EMAIL];
+    displays=false;
     
     handleCLicks(){
-
+            if(this.displays){
+                this.display=false;
+                console.log(this.display);
+            }else{
+                this.display=true;
+                console.log(this.display);
+            }
     }
 }

@@ -13,8 +13,11 @@
 
 
     <lightning-card>
-        <lightning-layout>
+        <lightning-layout if:true={displays}>
             <c-contact-List></c-contact-List>
+        </lightning-layout>
+        <lightning-layout if:false={displays}>
+           <p>Empty</p>
         </lightning-layout>
     </lightning-card>
 </template>
