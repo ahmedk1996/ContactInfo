@@ -1,11 +1,10 @@
 <template>
-
     <template for:each={contactList.data} for:item=contact>
-            <lightning-layout-item key={contact.Id}>
-                <p>{contact.FirstName}</p>
-                <p>{contact.LastName}</p>
-                <p>{contact.Email}</p>
-            </lightning-layout-item>
-    </template>
+        <lightning-layout-item key={contact.Id}>
+            <p>{contact.FirstName}</p>
+            <p>{contact.LastName}</p>
+            <p>{contact.Email}</p>
+        </lightning-layout-item>
+</template>
 
 </template>
